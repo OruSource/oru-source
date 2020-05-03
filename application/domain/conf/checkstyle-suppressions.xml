@@ -1,0 +1,4 @@
+<suppressions>
+    <checkFileSuppression check="VariableNameLength" file="CachingConstants.java"/>
+    <suppress checks="VisibilityModifier" files=".*Test.java"/>
+</suppressions>

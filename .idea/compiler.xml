@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="oru-source-smoke-tests" />
+        <module name="oru-source-domain" />
+        <module name="oru-source-service" />
+        <module name="oru-source-common-test" />
+        <module name="oru-source-integration-tests" />
+        <module name="oru-source-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="oru-source" target="1.5" />
+      <module name="oru-source-api" target="8" />
+      <module name="oru-source-common-test" target="8" />
+      <module name="oru-source-dependency-management" target="1.5" />
+      <module name="oru-source-domain" target="8" />
+      <module name="oru-source-integration-tests" target="8" />
+      <module name="oru-source-parent" target="1.5" />
+      <module name="oru-source-service" target="8" />
+      <module name="oru-source-smoke-tests" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

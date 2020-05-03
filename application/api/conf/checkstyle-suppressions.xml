@@ -1,0 +1,4 @@
+<suppressions>
+    <suppress checks="VisibilityModifier" files=".*Test.java"/>
+    <checkFileSuppression check="DoNotIncludeExtraneousInlineWhitespace" file="JsonServiceImplTest.java"/>
+</suppressions>

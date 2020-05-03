@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="950a6e66-0c4d-433b-823b-7f01c674eeca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/conf/checkstyle-suppressions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/src/main/java/com/instatenders/api/controller/PlaceholderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/src/main/resources/swagger/examples/placeholder.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/src/test/java/com/instatenders/api/controller/PlaceholderControllerSpringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/src/test/java/com/instatenders/api/controller/PlaceholderControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/src/test/resources/commons-logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/src/test/resources/simplelog.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/application/conf/checkstyle-suppressions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/application/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/application/src/main/java/com/instatenders/api/orusource/OruSourceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/application/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/application/src/main/resources/placeholder.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/application/src/test/java/com/instatenders/api/orusource/PlaceHolderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/application/src/test/resources/placeholder.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/conf/checkstyle-suppressions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/main/java/com/instatenders/api/test/caching/TestCacheManagerFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/main/java/com/instatenders/api/test/matcher/RecordingArgumentThat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/main/java/com/instatenders/api/test/matcher/caching/HasEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/main/java/com/instatenders/api/test/matcher/caching/HasEntryCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/main/java/com/instatenders/api/test/matcher/caching/HasEntryWithValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/main/java/com/instatenders/api/test/matcher/time/WithinTimeRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/main/resources/database/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/test/java/com/instatenders/api/test/caching/TestCacheManagerFactoryBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/test/java/com/instatenders/api/test/matcher/RecordingArgumentThatTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/test/java/com/instatenders/api/test/matcher/caching/HasEntryCountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/test/java/com/instatenders/api/test/matcher/caching/HasEntryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/test/java/com/instatenders/api/test/matcher/caching/HasEntryWithValueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/test/java/com/instatenders/api/test/matcher/time/WithinTimeRangeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common-test/src/test/resources/placeholder.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/conf/checkstyle-suppressions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/dependency-management/conf/checkstyle-suppressions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/dependency-management/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/domain/conf/checkstyle-suppressions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/domain/src/test/resources/commons-logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/domain/src/test/resources/database/transaction-types.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/domain/src/test/resources/simplelog.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration-tests/conf/checkstyle-suppressions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration-tests/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration-tests/src/main/java/com/instatenders/api/orusource/integrationtest/PlaceHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration-tests/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration-tests/src/test/java/com/instatenders/api/orusource/integrationtest/PlaceHolderIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smoke-tests/conf/checkstyle-suppressions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smoke-tests/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smoke-tests/src/main/java/com/instatenders/smoketest/Placeholder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smoke-tests/src/main/resources/placeholder.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ali95TSbMwdU4B77wNfhVpZVHX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Codebase\oru-source\smoke-tests" />
+      <recent name="D:\Codebase\oru-source\integration-tests" />
+      <recent name="D:\Codebase\oru-source\application" />
+      <recent name="D:\Codebase\oru-source" />
+      <recent name="D:\Codebase\oru-source\integration-test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="orusource" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Codebase\oru-source\application\api\src\main\resources\swagger\examples" />
+      <recent name="D:\Codebase\oru-source\integration-tests\src\test\java\com\orusource" />
+      <recent name="D:\Codebase\oru-source\smoke-tests\src\main\java\com\oru-source\smoketest" />
+      <recent name="D:\Codebase\oru-source\smoke-tests\src\main\java\com\oru-source" />
+      <recent name="D:\Codebase\oru-source\integration-test\src\main\java\com\orusource" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="OruSourceParentModuleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oru-source-parent" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.orusource.orusourceparent.OruSourceParentModuleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="950a6e66-0c4d-433b-823b-7f01c674eeca" name="Default Changelist" comment="" />
+      <created>1587316426539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587316426539</updated>
+      <workItem from="1587316429723" duration="599000" />
+      <workItem from="1587968182920" duration="618000" />
+      <workItem from="1588482788884" duration="16195000" />
+      <workItem from="1588527082353" duration="124000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="284" y="265" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588516484659">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="284" y="265" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1588516484659" />
+    <state x="367" y="222" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1588516459704">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="367" y="222" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680@0.0.1280.680" timestamp="1588516459704" />
+    <state x="139" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588517848219">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="139" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1588517848219" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1588517467574">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1588517467574" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1588512842262">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1588512842262" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1588516985304">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1588516985304" />
+    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1588517467574">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1588517467574" />
+    <state x="346" y="75" width="824" height="530" key="find.popup" timestamp="1588527021904">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="346" y="75" width="824" height="530" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1588527021904" />
+    <state x="91" y="0" key="new project wizard" timestamp="1588483202414">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1588483202414" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1588527121056">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1588527121056" />
+  </component>
+</project>

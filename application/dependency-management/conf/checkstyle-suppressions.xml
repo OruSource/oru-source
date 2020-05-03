@@ -1,0 +1,3 @@
+<suppressions>
+    <suppress checks="VisibilityModifier" files=".*Test.java"/>
+</suppressions>
