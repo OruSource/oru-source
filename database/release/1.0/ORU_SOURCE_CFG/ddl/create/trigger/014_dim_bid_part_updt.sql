@@ -1,0 +1,7 @@
+DELIMITER //
+CREATE TRIGGER dim_bid_part_updt BEFORE UPDATE 
+ON dim_bid_part FOR EACH ROW 
+BEGIN 
+	SET NEW.update_timestamp = CURRENT_TIMESTAMP();
+END //
+DELIMITER ;

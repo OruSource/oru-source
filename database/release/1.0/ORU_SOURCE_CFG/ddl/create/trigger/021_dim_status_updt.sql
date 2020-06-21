@@ -1,0 +1,7 @@
+DELIMITER //
+CREATE TRIGGER dim_status_updt BEFORE UPDATE 
+ON dim_status FOR EACH ROW 
+BEGIN 
+	SET NEW.update_timestamp = CURRENT_TIMESTAMP();
+END //
+DELIMITER ;
