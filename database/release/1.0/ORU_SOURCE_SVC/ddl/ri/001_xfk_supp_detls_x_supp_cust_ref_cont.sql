@@ -1,0 +1,6 @@
+USE ORU_SOURCE_SVC;
+
+ALTER TABLE supplier_details
+ADD CONSTRAINT xfk_supp_detls_x_supp_cust_ref_cont
+FOREIGN KEY (supplier_customer_ref_contact_id)
+REFERENCES supplier_customer_ref_contact (supplier_customer_ref_contact_id);
