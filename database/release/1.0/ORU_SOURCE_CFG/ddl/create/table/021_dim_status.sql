@@ -1,8 +1,8 @@
 USE ORU_SOURCE_CFG;
 
 CREATE TABLE dim_status (
-    status_code     			VARCHAR(16)		NOT NULL,
-    status_description		    VARCHAR(32),
+    status_code     			VARCHAR(32)		NOT NULL,
+    status_description		    VARCHAR(64),
     create_timestamp        	TIMESTAMP 		NOT NULL DEFAULT CURRENT_TIMESTAMP,
     update_timestamp        	TIMESTAMP 		NOT NULL DEFAULT CURRENT_TIMESTAMP
 );

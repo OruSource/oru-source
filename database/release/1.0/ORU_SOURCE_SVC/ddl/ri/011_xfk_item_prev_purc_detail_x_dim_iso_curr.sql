@@ -1,0 +1,6 @@
+USE ORU_SOURCE_SVC;
+
+ALTER TABLE item_previous_purchase_detail
+ADD CONSTRAINT xfk_item_prev_purc_detail_x_dim_iso_curr
+FOREIGN KEY (previous_purchase_currency)
+REFERENCES ORU_SOURCE_CFG.dim_iso_currency (iso_currency_code);
