@@ -1,4 +1,4 @@
-package com.instatenders.api.controller;
+package com.instatenders.orusource.application;
 
 import org.jmock.Mockery;
 import org.junit.jupiter.api.extension.ExtendWith;

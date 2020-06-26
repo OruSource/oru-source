@@ -1,4 +1,4 @@
-package com.instatenders.api.orusource;
+package com.instatenders.orusource.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

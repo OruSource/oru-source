@@ -13,6 +13,7 @@
 
 	<properties>
 		<jmock.version>2.12.0</jmock.version>
+		<spring-boot.version>2.3.1.RELEASE</spring-boot.version>
 	</properties>
 
 	<dependencyManagement>
@@ -41,11 +42,28 @@
 			<!-- ************** -->
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-parent</artifactId>
-				<version>2.2.6.RELEASE</version>
-				<!-- <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring-boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
 			</dependency>
-            <dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-parent</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-devtools</artifactId>
+				<scope>runtime</scope>
+				<optional>true</optional>
+			</dependency>
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<optional>true</optional>
+			</dependency>
+			<dependency>
                 <groupId>javax.activation</groupId>
                 <artifactId>javax.activation-api</artifactId>
                 <version>1.2.0</version>
