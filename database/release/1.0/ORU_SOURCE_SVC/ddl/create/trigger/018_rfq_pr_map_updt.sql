@@ -1,0 +1,7 @@
+DELIMITER //
+CREATE TRIGGER rfq_pr_map_updt BEFORE UPDATE
+ON rfq_pr_map FOR EACH ROW
+BEGIN
+	SET NEW.update_timestamp = CURRENT_TIMESTAMP();
+END //
+DELIMITER ;
