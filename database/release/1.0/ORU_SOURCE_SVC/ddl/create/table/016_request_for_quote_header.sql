@@ -12,7 +12,10 @@ CREATE TABLE request_for_quote_header (
 	earnest_money_deposit	DECIMAL(32, 2)											COMMENT 'This column is only used for government tenders/requirements (refundable amount)',
 	tender_fee				DECIMAL(32, 2)											COMMENT 'To participate the tender itself some amount will be required and non-refundable',
 	approval_type			VARCHAR(64)		NOT NULL,
-	rfq_status				VARCHAR(32)		NOT NULL,
+	assigned_to             INT             NOT NULL                                COMMENT 'used to identify the RFQ assigned to which approver user',
+    approval_flow           VARCHAR(64)     NOT NULL,
+    approved_by        		INT														COMMENT 'Person who approved/reviewed the RFQ',
+    rfq_status				VARCHAR(32)		NOT NULL,
 	attachment_available	VARCHAR(1)		NOT NULL,
     create_timestamp        TIMESTAMP 		NOT NULL 	DEFAULT CURRENT_TIMESTAMP,
     update_timestamp        TIMESTAMP 		NOT NULL 	DEFAULT CURRENT_TIMESTAMP

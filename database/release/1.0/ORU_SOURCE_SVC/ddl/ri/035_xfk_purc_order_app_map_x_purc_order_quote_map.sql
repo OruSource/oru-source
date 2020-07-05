@@ -1,0 +1,6 @@
+USE ORU_SOURCE_SVC;
+
+ALTER TABLE purchase_order_approver_map
+ADD CONSTRAINT xfk_purc_order_app_map_x_purc_order_quote_map
+FOREIGN KEY (purchase_order_quote_map_id)
+REFERENCES purchase_order_quote_map (purchase_order_quote_map_id);
