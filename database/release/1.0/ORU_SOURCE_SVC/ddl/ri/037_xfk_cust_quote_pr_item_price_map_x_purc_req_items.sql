@@ -1,0 +1,6 @@
+USE ORU_SOURCE_SVC;
+
+ALTER TABLE customer_quote_pr_item_price_map
+ADD CONSTRAINT xfk_cust_quote_pr_item_price_map_x_purc_req_items
+FOREIGN KEY (pr_item_line_id)
+REFERENCES purchase_request_items (pr_item_line_id);

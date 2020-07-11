@@ -1,0 +1,6 @@
+USE ORU_SOURCE_SVC;
+
+ALTER TABLE customer_quote_pr_price_map
+ADD CONSTRAINT xfk_cust_quote_pr_price_map_x_cust_quote_head
+FOREIGN KEY (customer_quote_header_id)
+REFERENCES customer_quote_header (customer_quote_header_id);
