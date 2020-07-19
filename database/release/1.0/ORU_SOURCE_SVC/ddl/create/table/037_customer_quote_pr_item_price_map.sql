@@ -15,5 +15,5 @@ CREATE TABLE customer_quote_pr_item_price_map (
 ALTER TABLE customer_quote_pr_item_price_map COMMENT = 'One customer quote might have many PR line items, individual line item price details will be stored here.';
 
 ALTER TABLE customer_quote_pr_item_price_map
-ADD CONSTRAINT xunique_cust_quote_pr_item_price_map
-UNIQUE KEY (customer_quote_header_id, pr_item_line_id);
+ADD CONSTRAINT xpk_cust_quote_pr_item_price_map
+PRIMARY KEY (customer_quote_header_id, pr_item_line_id);
