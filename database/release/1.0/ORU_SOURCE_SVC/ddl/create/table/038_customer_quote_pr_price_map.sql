@@ -1,6 +1,7 @@
 USE ORU_SOURCE_SVC;
 
 CREATE TABLE customer_quote_pr_price_map (
+    id                              BIGINT(20)      NOT NULL,
 	customer_quote_header_id		BIGINT			NOT NULL,
 	pr_items_total_basic_price		DECIMAL(32, 2) 	NOT NULL	COMMENT 'sum of pr item_total_basic_price',
 	pr_items_total_price			DECIMAL(32, 2) 	NOT NULL	COMMENT 'sum of pr item_total_price',
@@ -15,3 +16,7 @@ CREATE TABLE customer_quote_pr_price_map (
 );
 
 ALTER TABLE customer_quote_pr_price_map COMMENT = 'Customer quote will be created against the PR and this table holds the complete data of PR level pricing.';
+
+ALTER TABLE customer_quote_pr_price_map
+ADD CONSTRAINT xpk_customer_quote_pr_price_map
+PRIMARY KEY (id);

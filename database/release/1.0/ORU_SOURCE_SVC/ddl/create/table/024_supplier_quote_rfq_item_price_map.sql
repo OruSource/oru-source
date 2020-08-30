@@ -15,5 +15,5 @@ CREATE TABLE supplier_quote_rfq_item_price_map (
 ALTER TABLE supplier_quote_rfq_item_price_map COMMENT = 'This table holds one supplier quote have many rfq line items, individual line item price details will be stored here.';
 
 ALTER TABLE supplier_quote_rfq_item_price_map
-ADD CONSTRAINT xunique_supp_quote_rfq_item_price_map
-UNIQUE KEY (supplier_quote_header_id, rfq_item_line_id);
+ADD CONSTRAINT xpk_supp_quote_rfq_item_price_map
+PRIMARY KEY (supplier_quote_header_id, rfq_item_line_id);

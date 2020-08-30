@@ -10,5 +10,5 @@ CREATE TABLE purchase_request_supplier_map (
 ALTER TABLE purchase_request_supplier_map COMMENT = 'This allows the PR creator to choose their preferred supplier while creating PR itself, while creating RFQ the Purchase processor should give preference to the user selected supplier.';
 
 ALTER TABLE purchase_request_supplier_map
-ADD CONSTRAINT xunique_dim_platform_user_category
-UNIQUE KEY (purchase_request_id, supplier_code);
+ADD CONSTRAINT xpk_dim_platform_user_category
+PRIMARY KEY (purchase_request_id, supplier_code);

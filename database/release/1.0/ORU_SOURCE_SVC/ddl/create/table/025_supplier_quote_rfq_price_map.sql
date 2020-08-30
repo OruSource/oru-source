@@ -1,6 +1,7 @@
 USE ORU_SOURCE_SVC;
 
 CREATE TABLE supplier_quote_rfq_price_map (
+    id                              BIGINT(20)      NOT NULL,
 	supplier_quote_header_id		BIGINT			NOT NULL,
 	rfq_items_total_basic_price		DECIMAL(32, 2) 	NOT NULL	COMMENT 'sum of rfq item_total_basic_price',
 	rfq_items_total_price			DECIMAL(32, 2) 	NOT NULL	COMMENT 'sum of rfq item_total_price',
@@ -15,3 +16,7 @@ CREATE TABLE supplier_quote_rfq_price_map (
 );
 
 ALTER TABLE supplier_quote_rfq_price_map COMMENT = 'Quote will be created against the RFQ and this table holds the complete data of RFQ level pricing.';
+
+ALTER TABLE supplier_quote_rfq_price_map
+ADD CONSTRAINT xpk_supplier_quote_rfq_price_map
+PRIMARY KEY (id);

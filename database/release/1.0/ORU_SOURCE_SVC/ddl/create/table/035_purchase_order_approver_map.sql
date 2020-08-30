@@ -13,7 +13,7 @@ ALTER TABLE purchase_order_approver_map COMMENT = 'This table holds approvers ma
 
 ALTER TABLE purchase_order_approver_map
 ADD CONSTRAINT xpk_purchase_order_approver_map
-UNIQUE KEY (purchase_order_quote_map_id, approver_id);
+PRIMARY KEY (purchase_order_quote_map_id, approver_id);
 
 CREATE INDEX xindx_purchase_order_approver_map
 ON purchase_order_approver_map (purchase_order_quote_map_id);

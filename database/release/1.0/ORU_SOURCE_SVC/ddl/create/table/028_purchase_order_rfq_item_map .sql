@@ -17,7 +17,7 @@ ALTER TABLE purchase_order_rfq_item_map COMMENT = 'single purchase order have ma
 
 ALTER TABLE purchase_order_rfq_item_map
 ADD CONSTRAINT xpk_purchase_order_rfq_item_map
-UNIQUE KEY (purchase_order_quote_map_id, rfq_item_line_id);
+PRIMARY KEY (purchase_order_quote_map_id, rfq_item_line_id);
 
 ALTER TABLE purchase_order_rfq_item_map
 ADD CHECK (negotiated_flag IN ('Y', 'N'));
