@@ -11,8 +11,8 @@ CREATE TABLE rfq_item_supplier_mapping (
 ALTER TABLE rfq_item_supplier_mapping COMMENT = 'if supplier is assigned in rfq line item level, the mapping details will be stored in this table. Some flag needs to be handled in front end to determine whether the supplier assignment is against RFQ or RFQ Line item..';
 
 ALTER TABLE rfq_item_supplier_mapping
-ADD CONSTRAINT xunique_rfq_item_supplier_mapping
-UNIQUE KEY (rfq_item_line_id, supplier_code);
+ADD CONSTRAINT xpk_rfq_item_supplier_mapping
+PRIMARY KEY (rfq_item_line_id, supplier_code);
 
 ALTER TABLE rfq_item_supplier_mapping
 ADD CHECK (notification_sent IN ('Y', 'N'));

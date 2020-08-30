@@ -12,4 +12,4 @@ ALTER TABLE rfq_term_map COMMENT = 'This table holds rfq level terms details.';
 
 ALTER TABLE rfq_term_map
 ADD CONSTRAINT xunique_rfq_term_map
-UNIQUE KEY (rfq_id, term_code);
+PRIMARY KEY (rfq_id, term_code);

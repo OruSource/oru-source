@@ -13,7 +13,7 @@ ALTER TABLE supplier_quote_approver_map COMMENT = 'This table holds approvers ma
 
 ALTER TABLE supplier_quote_approver_map
 ADD CONSTRAINT xpk_supplier_quote_approver_map
-UNIQUE KEY (supplier_quote_header_id, approver_id);
+PRIMARY KEY (supplier_quote_header_id, approver_id);
 
 CREATE INDEX xindx_supplier_quote_approver_map
 ON supplier_quote_approver_map (supplier_quote_header_id);

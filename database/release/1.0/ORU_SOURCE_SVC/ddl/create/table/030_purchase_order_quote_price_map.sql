@@ -1,6 +1,7 @@
 USE ORU_SOURCE_SVC;
 
 CREATE TABLE purchase_order_quote_price_map (
+    id                              BIGINT(20)      NOT NULL,
 	purchase_order_quote_map_id		BIGINT			NOT NULL,
 	rfq_items_total_basic_price		DECIMAL(32, 2) 	NOT NULL	COMMENT 'sum of rfq item_total_basic_price',
 	rfq_items_total_price			DECIMAL(32, 2) 	NOT NULL	COMMENT 'sum of rfq item_total_price',
@@ -15,3 +16,7 @@ CREATE TABLE purchase_order_quote_price_map (
 );
 
 ALTER TABLE purchase_order_quote_price_map COMMENT = 'This table holds purchase order & RFQ level pricing.';
+
+ALTER TABLE purchase_order_quote_price_map
+ADD CONSTRAINT xpk_purchase_order_quote_price_map
+PRIMARY KEY (id);
