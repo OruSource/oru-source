@@ -84,6 +84,12 @@
             <!-- Third Party Libraries -->
             <!-- ********************* -->
 
+            <!-- MySqL -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.12</version>
+            </dependency>
             <!-- Apache -->
             <dependency>
                 <groupId>org.apache.commons</groupId>
