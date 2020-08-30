@@ -12,8 +12,8 @@ CREATE TABLE purchase_order_terms (
 ALTER TABLE purchase_order_terms COMMENT = 'This table holds the terms agreed against the supplier_terms_response and the final terms will be stored here.';
 
 ALTER TABLE purchase_order_terms
-ADD CONSTRAINT xunique_purchase_order_terms
-UNIQUE KEY (purchase_order_quote_map_id, term_code);
+ADD CONSTRAINT xpk_purchase_order_terms
+PRIMARY KEY (purchase_order_quote_map_id,term_code);
 
 ALTER TABLE purchase_order_terms
 ADD CHECK (negotiated_flag IN ('Y', 'N'));

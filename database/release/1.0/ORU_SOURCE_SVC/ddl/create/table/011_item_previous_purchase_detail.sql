@@ -15,7 +15,7 @@ ALTER TABLE item_previous_purchase_detail COMMENT = 'This table holds the item p
 
 ALTER TABLE item_previous_purchase_detail
 ADD CONSTRAINT xunique_dim_platform_user_category
-UNIQUE KEY (item_code_prefix, unit_of_measurement, previous_purchase_currency);
+PRIMARY KEY (item_code_prefix, unit_of_measurement, previous_purchase_currency);
 
 CREATE INDEX xindx_item_previous_purchase_detail
 ON item_previous_purchase_detail (item_code_prefix);

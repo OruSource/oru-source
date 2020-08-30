@@ -11,5 +11,5 @@ CREATE TABLE supplier_terms_response (
 ALTER TABLE supplier_terms_response COMMENT = 'This table holds the supplier agreed terms response.';
 
 ALTER TABLE supplier_terms_response
-ADD CONSTRAINT xunique_supplier_terms_response
-UNIQUE KEY (supplier_quote_header_id, term_code);
+ADD CONSTRAINT xpk_supplier_terms_response
+PRIMARY KEY (supplier_quote_header_id, term_code);
