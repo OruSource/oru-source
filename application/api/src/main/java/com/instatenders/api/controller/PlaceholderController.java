@@ -1,6 +1,5 @@
 package com.instatenders.api.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +10,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
-import com.instatenders.orusource.domain.services.ApprovalTableService;
+import com.instatenders.orusource.domain.service.impl.ApprovalTableServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -21,6 +20,11 @@ import io.swagger.annotations.ApiResponses;
 @RestController
 @RequestMapping("/test")
 public class PlaceholderController {
+    private final ApprovalTableServiceImpl approvalTableServiceImpl;
+
+    public PlaceholderController(ApprovalTableServiceImpl approvalTableServiceImpl) {
+        this.approvalTableServiceImpl = approvalTableServiceImpl;
+    }
 
     @ApiOperation(value = "test",
             notes = "API requests.",
@@ -36,8 +40,6 @@ public class PlaceholderController {
         return new ResponseEntity<>(OK);
     }
 
-    @Autowired
-    ApprovalTableService approvalTableService;
     @ApiOperation(value = "get",
             notes = "API requests.",
             response = String.class)
@@ -49,8 +51,8 @@ public class PlaceholderController {
     @RequestMapping(value = "/get", method = GET, consumes = APPLICATION_JSON_VALUE,
             produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<String> getApprovalAndCustomerContact(@RequestBody String requestBody) {
-        String approvalType = approvalTableService.getApprovalType().toString();
-        String custContact = approvalTableService.getCustomerRefContact().toString();
+        String approvalType = approvalTableServiceImpl.getApprovalType().toString();
+        String custContact = approvalTableServiceImpl.getCustomerRefContact().toString();
         return new ResponseEntity<>(approvalType + "\n" + custContact, OK);
     }
 }
