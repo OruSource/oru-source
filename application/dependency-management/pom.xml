@@ -136,7 +136,7 @@
                         <artifactId>spring-jcl</artifactId>
                     </exclusion>
                 </exclusions>
-                <version>5.2.5.RELEASE</version>
+                <version>5.3.14</version>
             </dependency>
             <!-- Database -->
             <dependency>
